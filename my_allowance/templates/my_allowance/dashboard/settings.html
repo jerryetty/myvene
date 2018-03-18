@@ -1,0 +1,54 @@
+{% extends 'my_allowance/dashboard/base.html' %}
+{% load staticfiles %}
+
+{% block title %} Settings {% endblock title %}
+
+{% block body %}  
+	<div class="col-sm-12">
+		<div class="col-md-12">
+			<br>
+		</div>
+		<div class="col-md-4">
+			<div class="card text-xs-center">
+				<div class="card-header">
+					<i class='fa fa-user' style="font-size: 80px"></i>
+				</div>
+				<div class="card-block text-xs-center">
+					<a href="{% url 'my_allowance:account' %}">
+						<button class="btn btn-default">
+							Account
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card text-xs-center">
+				<div class="card-header">
+					<i class='fa fa-cog' style="font-size: 80px"></i>
+				</div>
+				<div class="card-block text-xs-center">
+					<a href="{% url 'my_allowance:not_preferences' %}">
+						<button class="btn btn-default">
+							Notification Preferences
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card text-xs-center">
+				<div class="card-header">
+					<i class='fa fa-lock' style="font-size: 80px"></i>
+				</div>
+				<div class="card-block text-xs-center">
+					<a href="{% url 'my_allowance:password' %}">
+						<button class="btn btn-default">
+							Change Password
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock body %} 

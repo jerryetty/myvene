@@ -1,0 +1,25 @@
+{% extends 'my_allowance/dashboard/base.html' %}
+{% load staticfiles %}
+
+{% block title %} Account {% endblock title %}
+
+{% block body %}  
+	<div class="col-sm-12">
+		<div><br></div>
+		<div class="col-sm-6 offset-md-3">
+			<div class="card">
+			<h4 class="text-xs-center">Update Your Profile</h4>
+				<div class="card-block">
+					<form method="post" class="form">
+					  {% csrf_token %}
+					  {{ form }}
+					  <hr>
+					 <center>
+					 	 <button class="btn btn-success" type="submit">Update</button>
+					 </center>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock body %} 

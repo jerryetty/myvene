@@ -1,0 +1,82 @@
+{% extends 'my_allowance/dashboard/base.html' %}
+{% load staticfiles %}
+
+{% block title %} Notification Preferences {% endblock title %}
+
+{% block body %}  
+<div class="col-sm-12">
+		<div><br></div>
+		<div class="col-sm-8 offset-md-2">
+			<div class="card">
+			<h4 class="text-xs-center">Choose How you would love to receive notifications</h4>
+			<hr>
+				<div class="card-block">
+					<div class="col-sm-12">
+					<div class="col-sm-12">
+						<p>
+							Your notifications can be updated at any time via the options below or the Airtasker App.
+						</p>
+					</div>
+						<div class="col-sm-6">
+							<h5>Email:</h5>
+
+						</div>
+						<div class="col-sm-6">
+							<h5>Mobile:</h5>
+
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<hr>
+					</div>
+					<div class="col-sm-12">
+						<div class="alert alert-info" role="alert">
+							<strong>Transactions</strong> You will always receive important notifications about any payments, cancellations and your account. <hr>
+							<form role="form">
+								<label class="checkbox-inline"><input type="checkbox" value="SMS">SMS</label>
+								<label class="checkbox-inline"><input type="checkbox" value="Email">Email</label>
+								<label class="checkbox-inline"><input type="checkbox" value="Push">Push</label>
+															    
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="alert alert-info" role="alert">
+							<strong>Task Updates</strong> Friendly reminders if you’ve forgotten to assign or do a task<hr>
+							<form role="form">
+								<label class="checkbox-inline"><input type="checkbox" value="SMS">SMS</label>
+								<label class="checkbox-inline"><input type="checkbox" value="Email">Email</label>
+								<label class="checkbox-inline"><input type="checkbox" value="Push">Push</label>
+															    
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="alert alert-info" role="alert">
+							<strong>Task Recomendations</strong> Receive recommendations for tasks you can assign ypur children. <hr>
+							<form role="form">
+								<label class="checkbox-inline"><input type="checkbox" value="SMS">SMS</label>
+								<label class="checkbox-inline"><input type="checkbox" value="Email">Email</label>
+								<label class="checkbox-inline"><input type="checkbox" value="Push">Push</label>
+															    
+							</form>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="alert alert-info" role="alert">
+							<strong>Helpful Information</strong> Learn about how to assign tasks with helpful tips and advice. <hr>
+							<form role="form">
+								<label class="checkbox-inline"><input type="checkbox" value="SMS">SMS</label>
+								<label class="checkbox-inline"><input type="checkbox" value="Email">Email</label>
+								<label class="checkbox-inline"><input type="checkbox" value="Push">Push</label>
+															    
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock body %} 
