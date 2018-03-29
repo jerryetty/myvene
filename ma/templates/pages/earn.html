@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+	<section class="wrapper works container">
+		<div class="col-sm-12" style="color: #888888">
+			<div class="col-sm-8" >
+				<img class="img" style="width: 100%" src="{% static 'assets/images/slider/3.jpg' %}">
+				<h3>
+					Jobs that put children first
+				</h3>
+				<hr>
+				<p style="color: #d0d0d0">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</div>
+			
+			<div class="col-sm-4">
+				
+				<div class="col-sm-12">
+					<div class="signup-form bg-inverse">
+					    <div style="padding: 4%">
+					    	<form action="/examples/actions/confirmation.php" method="post">
+							<h2>Join Today</h2>
+							<p class="hint-text">Create your account. It's free and only takes a minute.</p>
+					        <div class="form-group">
+								<div class="row">
+									<div class="col-md-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+									<div class="col-md-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+								</div>        	
+					        </div>
+					        <div class="form-group">
+					        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+					        </div>
+							<div class="form-group">
+					            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+					        </div>
+							<div class="form-group">
+					            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+					        </div>        
+					       <!--  <div class="form-group">
+								<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+							</div> -->
+							<div class="form-group">
+					            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+					        </div>
+						<div class="text-center">Already have an account? <a href="#"><br><small>Sign in</small></a></div>
+					    </form>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="banner_bottom special container" style="padding: 0; height: 100px; margin-top: -7%">
+		<!-- <div class="row"> -->
+			<div class="col-md-4 text-center">
+
+				<section>
+					<span class="icon featured fa-check"></span>
+					<header>
+						<h3>Be Your Boss</h3>
+					</header>
+					<p>Help Children build their Work efficiency while acquiring Hands on knowledge in their financial literacy. This is a culture to smoothen transition into adulthood.</p>
+				</section>
+
+			</div>
+			<div class="col-md-4 text-center">
+
+				<section>
+					<span class="icon featured fa-check"></span>
+					<header>
+						<h3>Collaborative Learning</h3>
+					</header>
+					<p>Involving parents more as learning partners, we can increase learning outcome for the future generation. Motivating and rewarding of children fosters enjoyment of learning</p>
+				</section>
+
+			</div>
+			<div class="col-md-4 text-center">
+
+				<section>
+					<span class="icon featured fa-check"></span>
+					<header>
+						<h3>Innovative</h3>
+					</header>
+					<p>Keeping children busy will save you a lot from spending on serice providers when it comes to housework while reducing passiveness</p>
+				</section>
+
+			</div>
+		<!-- </div> -->
+	</section>
+
+	<section class="row banner_bottom donate-log contatiner wrapper">
+		
+		<div class="col-sm-12 text-center">
+			<h3 class="text-center">
+				Let's get you earning <br><br>
+			</h3><h6 class="text-center text-lowercase">It's Easy</h6>
+			<br>
+
+		</div>	
+
+		<!-- <div class="col-sm-12" style="padding: 0">
+			<div class="col-sm-6 offset-md-3">
+				<hr>
+			</div>
+		</div> -->
+		
+		<div class="col-sm-12 text-center">
+			<div class="col-md-4 text-center" style="vertical-align: middle;">
+				<div class="">
+					<i class='fa fa-user step'></i><br>
+					<!-- <strong><h3>1<br><p> ___________________ </p></h3></strong>
+ 		-->
+					<br>
+					<p>
+						Get the app and register online
+					</p>
+					
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="">
+					<i class='fa fa-search step'></i><br>
+					<!-- <strong><h3>2<br><p> ___________________ </p></h3></strong> -->
+					<br>
+
+					<p>
+						Find the job you parent wants you to do
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="">
+					<i class='fa fa-dollar step'></i><br>
+					<!-- <strong><h3>3<br><p> ___________________ </p></h3></strong> -->
+					<br>
+
+					<p>
+						Do it well, Get paid
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
